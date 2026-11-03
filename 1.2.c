@@ -6,23 +6,19 @@
  * @param gramm граммы
  * @return Значение после перевода 
  */
-double onunce(const double gramm);
-* @brief Просит ввести граммы 
+
+double ounce(const double gramm);
+/**
+ * @brief Просит ввести граммы 
  * @param weight
  * @return Количество граммов после перевода 
-/*
-double getWeight();
- 
- * @brief Принимает значение граммов и делением на 28.3 переводит его в унци
- * @return Считанное значение в унциях
  */
-double getDouble();
+double getWeight();
 
 /**
- * @brief Точка входа в программу
- * @return 0, если программа выполнена корректно, иначе не 0
+ * @brief Считывает число типа double
+ * @return Введенное пользователем число
  */
-
  double getDouble();
 
 /**
@@ -54,5 +50,5 @@ double getWeight()
     double weight = 0.0;
     printf("введите количество граммов\n");
     weight = getDouble();
-    return weight
+    return weight;
 }
