@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <math.h>
+
+/**
+ * @brief Переводит граммы в унции 
+ * @param gramm граммы
+ * @return Значение после перевода 
+ */
+
+double ounce(const double gramm);
+/**
+ * @brief Просит ввести граммы 
+ * @param weight
+ * @return Количество граммов после перевода 
+ */
+double getWeight();
+
+/**
+ * @brief Считывает число типа double
+ * @return Введенное пользователем число
+ */
+ double getDouble();
+
+/**
+ * @brief Точка входа в программу
+ * @return 0, если программа выполнена корректно, иначе не 0
+ */
+int main()
+{
+    double gramm = getWeight();
+    
+    printf("В унциях это %lf\n",ounce(gramm));
+    
+    return 0;
+}
+
+double ounce(const double gramm)
+{
+    return gramm/28.3;
+}
+
+double getDouble()
+{
+    double value = 0.0;
+    scanf("%lf",&value);
+    return value;
+}
+double getWeight()
+{
+    double weight = 0.0;
+    printf("введите количество граммов\n");
+    weight = getDouble();
+    return weight;
+}
